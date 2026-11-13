@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrés Caicedo · Artista multimedia | andresc_productions</title>
+  <meta name="description" content="Portafolio de Andrés Caicedo, Tecnólogo en Producción Multimedia (SENA) en Ibagué, Tolima: proyectos de Diseño, Arte Plástico y Audiovisual.">
+  <meta name="theme-color" content="#F4ECDD">
+
+  <!-- SEGURIDAD -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://docs.google.com; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; media-src 'self'; frame-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; manifest-src 'none'; worker-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="icon" href="img/marca/favicon.ico" sizes="any">
+  <link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/marca/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/estilos.css?v=20261104a">
+  <link rel="stylesheet" href="css/marca-base.css?v=20261104a">
+  <link rel="stylesheet" href="css/marca.css?v=20261112p">
+  <link rel="stylesheet" href="seguridad/seguridad.css?v=20261004a">
+  <link rel="stylesheet" href="legal/consentimiento.css?v=20261106a">
+  <link rel="stylesheet" href="css/perfil.css">
+</head>
+
+<body>
+
+  <!-- SÍMBOLO A·C (se reutiliza en el menú y en el pie) -->
+  <svg class="m-simbolos" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="m-iso" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" d="M100 100 100 0 54.34 0 88.34 100ZM0 0 0 100 75.66 100 64.10 66 40 66 40 54 60.02 54 43.80 6.30 41.63 6.68 39.48 7.24 37.37 7.95 35.32 8.81 33.34 9.83 31.44 10.98 29.63 12.28 27.93 13.71 26.33 15.25 24.85 16.92 23.50 18.69 22.28 20.55 21.21 22.50 20.28 24.52 19.55 26.48 18.92 28.62 18.41 31.05 18.11 33.39 18 35.87 18.08 38.22 18.35 40.56 18.83 43 19.51 45.39 20.38 47.72 21.45 49.97 22.63 52.01 24.04 54.05 25.53 55.88 27.16 57.58 29.02 59.23 31.01 60.72 33.01 61.99 26.99 72.37 24.67 70.92 22.43 69.32 20.31 67.58 18.30 65.70 16.42 63.69 14.68 61.57 13.08 59.33 11.72 57.16 10.41 54.74 9.27 52.24 8.29 49.67 7.53 47.22 6.88 44.55 6.41 41.85 6.12 39.11 6 36.37 6.07 33.62 6.31 30.88 6.74 28.17 7.34 25.48 8.11 22.85 9.06 20.27 10.17 17.75 11.36 15.48 12.78 13.13 14.24 11.02 15.94 8.86 17.79 6.82 19.76 4.91 21.85 3.13 24.06 1.49 26.37 0Z"/></symbol>
+  </svg>
+
+  <!-- INTRO «EL CORTE»: el logo se talla al abrir la página -->
+  <div class="intro-corte" id="introCorte" role="dialog" aria-label="Presentación de andresc_productions">
+    <div class="intro-escena">
+      <svg class="intro-logo" viewBox="-12 -12 124 124" aria-hidden="true" focusable="false">
+        <defs><mask id="introMascara" maskUnits="userSpaceOnUse" x="-20" y="-20" width="140" height="140"><rect x="-20" y="-20" width="140" height="140" fill="#fff"/><path class="ic ic-c" pathLength="1" d="M48 -14 L48 0 A36 36 0 0 0 30 67.18"/><path class="ic ic-d" pathLength="1" d="M43.49 -13.25 L86.51 113.25"/><path class="ic ic-b" pathLength="1" d="M68.4 60 L40 60"/></mask></defs>
+        <rect class="intro-bloque" width="100" height="100" mask="url(#introMascara)"/>
+      </svg>
+      <p class="intro-palabra"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span></p>
+      <p class="intro-presenta">presenta</p>
+    </div>
+    <button type="button" class="intro-saltar" id="introSaltar">Saltar <span aria-hidden="true">›</span></button>
+  </div>
+
+  <!-- MENÚ -->
+  <nav id="mainNav" aria-label="Principal">
+    <a href="#home" class="nav-logo" aria-label="andresc_productions: volver al inicio">
+      <svg class="nav-logo-icono" aria-hidden="true" focusable="false"><use href="#m-iso"/></svg>
+      <span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#historia" class="nav-link" data-nav="historia">Historia</a></li>
+      <li class="nav-dropdown">
+        <button type="button" class="nav-link nav-cats-btn" id="navCatsBtn" aria-haspopup="true" aria-expanded="false">Trabajo <span class="nav-flecha" aria-hidden="true">▾</span></button>
+        <ul class="nav-dropdown-menu" id="navCatsMenu">
+          <li><a href="#work-diseno"><span class="menu-num">01</span>Diseño</a></li>
+          <li><a href="#work-audiovisual"><span class="menu-num">02</span>Audiovisual</a></li>
+          <li><a href="#work-arteplastico"><span class="menu-num">03</span>Arte plástico</a></li>
+        </ul>
+      </li>
+      <li><a href="#servicios" class="nav-link" data-nav="servicios">Servicios</a></li>
+      <li><a href="#contact" class="nav-link" data-nav="contact">Contacto</a></li>
+    </ul>
+    <div class="nav-acciones">
+      <span class="nav-reloj"><span class="nav-ciudad">Ibagué</span><span class="nav-clock" id="navClock" aria-label="Hora actual en Colombia">--:-- --</span></span>
+      <a href="tienda.html" class="nav-shop-btn">Tienda</a>
+      <button type="button" class="nav-like-badge" id="navLikeBtn" aria-pressed="false" aria-label="Dar me gusta al portafolio">
+        <span class="heart">♥</span><span id="navLikeCount">–</span>
+      </button>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Cambiar a modo oscuro">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PORTADA -->
+  <section id="home" class="portada" aria-labelledby="portadaNombre">
+    <div class="portada-texto">
+      <p class="portada-presenta"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span> <span>presenta</span></p>
+      <h1 class="portada-nombre" id="portadaNombre"><span class="pn-linea"><span>Andrés</span></span><span class="pn-linea"><span>Caicedo</span></span></h1>
+      <p class="portada-rol">Artista multimedia<i class="marca-guion" aria-hidden="true"></i></p>
+      <p class="portada-areas">Diseño · Audiovisual · Arte</p>
+      <div class="portada-ctas">
+        <a href="#disciplinas" class="m-boton m-boton-lleno">Ver trabajo <span aria-hidden="true">→</span></a>
+        <a href="#contact" class="m-boton m-boton-linea">Hablemos <span aria-hidden="true">→</span></a>
+        <a href="docs/Hoja_de_vida_Andres_Caicedo.pdf" class="m-boton m-boton-linea" target="_blank" rel="noopener" download>Hoja de vida <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="portada-dato">Tecnólogo en Producción Multimedia · SENA · Ibagué, Tolima</p>
+    </div>
+    <div class="portada-visual" aria-hidden="true">
+      <span class="portada-bloque"></span>
+      <svg class="portada-cortes" viewBox="0 0 100 100" focusable="false"><path d="M48 -14 L48 0 A36 36 0 0 0 30 67.18"/><path d="M43.49 -13.25 L86.51 113.25"/><path d="M68.4 60 L40 60"/></svg>
+      <img class="portada-cara" src="img/marca/andres_rostro.webp" alt="" width="900" height="1080" fetchpriority="high">
+    </div>
+    <a href="#historia" class="portada-bajar"><span>Desliza</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <!-- MI HISTORIA: el logo se talla mientras bajas -->
+  <section id="historia" class="historia" aria-labelledby="historiaTitulo">
+    <h2 id="historiaTitulo" class="m-oculto">Mi historia</h2>
+    <div class="historia-fijo">
+      <div class="historia-visual">
+        <span class="m-etiqueta">historia</span>
+        <svg class="historia-svg" viewBox="-14 -14 128 128" aria-hidden="true" focusable="false">
+          <defs><mask id="historiaMascara" maskUnits="userSpaceOnUse" x="-20" y="-20" width="140" height="140"><rect x="-20" y="-20" width="140" height="140" fill="#fff"/><path class="hc hc-c" pathLength="1" d="M48 -14 L48 0 A36 36 0 0 0 30 67.18"/><path class="hc hc-d" pathLength="1" d="M43.49 -13.25 L86.51 113.25"/><path class="hc hc-b" pathLength="1" d="M68.4 60 L40 60"/></mask><clipPath id="historiaRecorte"><rect width="100" height="100"/></clipPath></defs>
+          <rect class="historia-bloque" width="100" height="100" mask="url(#historiaMascara)"/>
+          <g clip-path="url(#historiaRecorte)">
+            <path class="hb hb-c" pathLength="1" d="M48 -14 L48 0 A36 36 0 0 0 30 67.18"/><path class="hb hb-d" pathLength="1" d="M43.49 -13.25 L86.51 113.25"/><path class="hb hb-b" pathLength="1" d="M68.4 60 L40 60"/>
+          </g>
+        </svg>
+        <p class="historia-firma"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span></p>
+        <p class="historia-contador" aria-hidden="true"><span id="historiaNum">01</span> / 05</p>
+      </div>
+      <ol class="historia-pasos">
+        <li class="historia-paso es-actual" data-paso="0">
+          <span class="hp-titulo"><span class="hp-num">01</span>El bloque</span>
+          <p class="hp-frase">Todo empieza siendo un bloque.</p>
+          <p class="hp-nota">Desarmar para entender. Armar para inventar.</p>
+        </li>
+        <li class="historia-paso" data-paso="1">
+          <span class="hp-titulo"><span class="hp-num">02</span>La curva</span>
+          <p class="hp-frase">La vida da giros.</p>
+          <p class="hp-nota">Casi nunca es el camino que uno planeó.</p>
+        </li>
+        <li class="historia-paso" data-paso="2">
+          <span class="hp-titulo"><span class="hp-num">03</span>El corte</span>
+          <p class="hp-frase">Hasta que uno decide.</p>
+          <p class="hp-nota">2022 · El arte me encontró.</p>
+        </li>
+        <li class="historia-paso" data-paso="3">
+          <span class="hp-titulo"><span class="hp-num">04</span>La pausa</span>
+          <p class="hp-frase">También hay pausas.</p>
+          <p class="hp-nota">Detenerse no es rendirse.</p>
+        </li>
+        <li class="historia-paso" data-paso="4">
+          <span class="hp-titulo"><span class="hp-num">05</span>Lo abierto</span>
+          <p class="hp-frase">El camino uno lo moldea.</p>
+          <p class="hp-nota">Diseño · Audiovisual · Arte</p>
+        </li>
+      </ol>
+      <div class="historia-barra" aria-hidden="true"><span id="historiaBarra"></span></div>
+    </div>
+  </section>
+
+  <!-- TRES CAMINOS (índice del trabajo) -->
+  <section id="disciplinas" class="caminos" aria-labelledby="caminosTitulo">
+    <header class="m-cabeza" data-reveal>
+      <span class="m-etiqueta">trabajo</span>
+      <h2 class="m-titulo" id="caminosTitulo">Tres caminos,<br>un mismo corte.</h2>
+    </header>
+    <div class="caminos-grid">
+      <a href="#work-diseno" class="camino" data-reveal>
+        <span class="camino-foto"><img src="img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-01.jpg" alt="" loading="lazy"></span>
+        <span class="camino-cuerpo">
+          <span class="camino-num">01</span>
+          <span class="camino-nombre">Diseño</span>
+          <span class="camino-cats">Identidad visual · Publicidad · Informativo · Personajes</span>
+          <span class="camino-nivel" style="--nivel:80%"><span class="camino-nivel-texto">Dominio</span></span>
+          <span class="camino-ir">Ver trabajo <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#work-audiovisual" class="camino" data-reveal>
+        <span class="camino-foto"><img src="img/proyectos.md/Audio%20Visual/Fotografia/3.2.jpg" alt="" loading="lazy"></span>
+        <span class="camino-cuerpo">
+          <span class="camino-num">02</span>
+          <span class="camino-nombre">Audiovisual</span>
+          <span class="camino-cats">Fotografía · Video · Guion · Animación · Motion graphics</span>
+          <span class="camino-nivel" style="--nivel:65%"><span class="camino-nivel-texto">Dominio</span></span>
+          <span class="camino-ir">Ver trabajo <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#work-arteplastico" class="camino" data-reveal>
+        <span class="camino-foto"><img src="img/proyectos.md/Arteplastico/Pintura/Caballo.jpeg" alt="" loading="lazy"></span>
+        <span class="camino-cuerpo">
+          <span class="camino-num">03</span>
+          <span class="camino-nombre">Arte plástico</span>
+          <span class="camino-cats">Pintura · Escenografía</span>
+          <span class="camino-nivel" style="--nivel:55%"><span class="camino-nivel-texto">Dominio</span></span>
+          <span class="camino-ir">Ver trabajo <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- WORK — DISEÑO -->
+  <section id="work-diseno" class="work-page"
+    data-title="DISEÑOS"
+    data-bgs="img/Perfil.jpg/Pgn3/Fondolineas1pgn3.webp">
+    <div class="work-bg" style="background-image:url('img/Perfil.jpg/Pgn3/Fondolineas1pgn3.webp')"></div>
+
+    <span class="work-num" aria-hidden="true">01</span>
+    <div class="work-left" data-reveal>
+      <span class="m-etiqueta">trabajo 01</span>
+      <h2><span>Diseño</span></h2>
+      <p>Hago que tus ideas cobren vida y alcancen su máximo potencial a través del diseño.</p>
+
+      <div class="work-actions">
+        <div class="work-cta-row">
+          <a href="#contact" class="btn-contact">Contactar <span class="arrow">›</span></a>
+          <button type="button" class="btn-gallery" data-gallery-btn>Ver galería <span class="arrow">›</span></button>
+        </div>
+        <div class="socials">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrescproductions323%40gmail.com&su=Hola%20Andr%C3%A9s%2C%20tengo%20un%20proyecto%20en%20mente&body=Hola%20Andr%C3%A9s%2C%0A%0AMi%20nombre%20es%20%5Btu%20nombre%5D%20y%20vi%20tu%20portafolio.%20Me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%0A%0AQuedo%20atento%20a%20tu%20respuesta.%0A%0A%C2%A1Saludos%21" target="_blank" rel="noopener noreferrer" title="Correo" aria-label="Escribir por correo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"></rect><path d="M3.5 6.2l8.5 6.7 8.5-6.7"></path></svg>
+          </a>
+          <a href="https://wa.me/573227379954?text=Hola%20Andr%C3%A9s%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%20%C2%BFPodr%C3%ADamos%20hablar%3F" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Escribir por WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 3.5h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V5.5z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/andresc_productions?stkn=bDYwajUxdnJ6OXJr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ver Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-categorias-wrap">
+      <button type="button" class="cat-toggle" aria-expanded="true" aria-label="Ocultar Categorías de Diseño">›</button>
+      <aside class="work-categorias" aria-label="Categorías de Diseño">
+            <span class="cat-chip">CATEGORIAS</span>
+            <div class="cat-list" role="listbox">
+              <button class="cat-btn active" data-cat="IDENTIDAD VISUAL">Identidad Visual</button>
+              <button class="cat-btn" data-cat="PUBLICITARIO">Publicitario</button>
+              <button class="cat-btn" data-cat="INFORMATIVO">Informativo</button>
+              <button class="cat-btn" data-cat="PERSONAJES">Personajes</button>
+              <button class="cat-btn cat-btn-skills" data-cat="SKILLS">Skills</button>
+            </div>
+          </aside>
+    </div>
+
+    <button type="button" class="featured-photo-big" id="identidadPhotoBig" data-for="IDENTIDAD VISUAL" aria-label="Ver galería de identidad visual">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Diseños/Identidad%20visual/paginas/pagina-01.jpg" alt="Identidad visual destacada" loading="lazy">
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="publicitarioPhotoBig" data-for="PUBLICITARIO" aria-label="Ver galería de publicitario">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Dise%C3%B1os/Publicidad/feed_01_diseno.jpg" alt="Post de Instagram: Cada línea tiene una razón" loading="lazy">
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="informativoPhotoBig" data-for="INFORMATIVO" aria-label="Ver galería de informativo">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Diseños/Informativo/yosena.jpeg" alt="Informativo destacado" loading="lazy">
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="personajesDisenoPhotoBig" data-for="PERSONAJES" aria-label="Ver galería de personajes">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Diseños/Personajes/personaje_color.webp" alt="Personajes destacado" loading="lazy">
+      </span>
+    </button>
+
+    <div class="featured-skills" data-for="SKILLS" aria-label="Herramientas de Diseño">
+      <div class="featured-skills-card">
+        <button type="button" class="skills-rotator" id="skillsRotator" aria-haspopup="dialog" aria-controls="skillsModal" aria-label="Ver todas las herramientas">
+          <span class="skill-icon" id="skillsRotatorIcon">
+            <img src="img/proyectos.md/Diseños/Skills/Illustrator.png" alt="" id="skillsRotatorImg">
+          </span>
+          <span class="skill-name" id="skillsRotatorName">Illustrator</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="skills-modal" id="skillsModal" role="dialog" aria-modal="true" aria-label="Herramientas de Diseño" hidden>
+      <div class="skills-modal-backdrop" data-skills-close></div>
+      <div class="skills-modal-panel">
+        <button type="button" class="skills-modal-close" data-skills-close aria-label="Cerrar">×</button>
+        <span class="featured-skills-title">Herramientas</span>
+        <div class="skills-tools">
+          <a class="skill-tool" href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noopener noreferrer" title="Adobe Illustrator">
+            <span class="skill-icon">
+              <img src="img/proyectos.md/Diseños/Skills/Illustrator.png" alt="Adobe Illustrator" loading="lazy">
+            </span>
+            <span class="skill-name">Illustrator</span>
+          </a>
+          <a class="skill-tool" href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer" title="Adobe Photoshop">
+            <span class="skill-icon">
+              <img src="img/proyectos.md/Diseños/Skills/photoshop.png" alt="Adobe Photoshop" loading="lazy">
+            </span>
+            <span class="skill-name">Photoshop</span>
+          </a>
+          <a class="skill-tool" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" title="Figma">
+            <span class="skill-icon">
+              <img src="img/proyectos.md/Diseños/Skills/Figma.png" alt="Figma" loading="lazy">
+            </span>
+            <span class="skill-name">Figma</span>
+          </a>
+          <a class="skill-tool" href="https://www.blender.org/" target="_blank" rel="noopener noreferrer" title="Blender">
+            <span class="skill-icon">
+              <img src="img/proyectos.md/Diseños/Skills/Blender.png" alt="Blender" loading="lazy">
+            </span>
+            <span class="skill-name">Blender</span>
+          </a>
+          <a class="skill-tool" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" title="Canva">
+            <span class="skill-icon">
+              <img src="img/proyectos.md/Diseños/Skills/canva.png" alt="Canva" loading="lazy">
+            </span>
+            <span class="skill-name">Canva</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-bottom-nav">
+      <button class="nav-arrow nav-prev" aria-label="Categoría anterior">‹</button>
+      <span class="nav-current">IDENTIDAD VISUAL</span>
+      <button class="nav-arrow nav-next" aria-label="Categoría siguiente">›</button>
+    </div>
+  </section>
+
+  <!-- WORK — AUDIOVISUAL -->
+  <section id="work-audiovisual" class="work-page"
+    data-title="AUDIOVISUAL"
+    data-bgs="img/Perfil.jpg/Pgn4/Fondolineas1pgn4.webp">
+    <div class="work-bg" style="background-image:url('img/Perfil.jpg/Pgn4/Fondolineas1pgn4.webp')"></div>
+
+    <span class="work-num" aria-hidden="true">02</span>
+    <div class="work-left" data-reveal>
+      <span class="m-etiqueta">trabajo 02</span>
+      <h2><span>Audiovisual</span></h2>
+      <p>Produzco piezas audiovisuales donde cada toma cuenta una historia y cada historia enciende una emoción.</p>
+
+      <div class="work-actions">
+        <div class="work-cta-row">
+          <a href="#contact" class="btn-contact">Contactar <span class="arrow">›</span></a>
+          <button type="button" class="btn-gallery" data-gallery-btn>Ver galería <span class="arrow">›</span></button>
+        </div>
+        <div class="socials">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrescproductions323%40gmail.com&su=Hola%20Andr%C3%A9s%2C%20tengo%20un%20proyecto%20en%20mente&body=Hola%20Andr%C3%A9s%2C%0A%0AMi%20nombre%20es%20%5Btu%20nombre%5D%20y%20vi%20tu%20portafolio.%20Me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%0A%0AQuedo%20atento%20a%20tu%20respuesta.%0A%0A%C2%A1Saludos%21" target="_blank" rel="noopener noreferrer" title="Correo" aria-label="Escribir por correo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"></rect><path d="M3.5 6.2l8.5 6.7 8.5-6.7"></path></svg>
+          </a>
+          <a href="https://wa.me/573227379954?text=Hola%20Andr%C3%A9s%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%20%C2%BFPodr%C3%ADamos%20hablar%3F" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Escribir por WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 3.5h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V5.5z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/andresc_productions?stkn=bDYwajUxdnJ6OXJr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ver Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-categorias-wrap">
+      <button type="button" class="cat-toggle" aria-expanded="true" aria-label="Ocultar Categorías de Audiovisual">›</button>
+      <aside class="work-categorias" aria-label="Categorías de Audiovisual">
+            <span class="cat-chip">CATEGORIAS</span>
+            <div class="cat-list" role="listbox">
+              <button class="cat-btn active" data-cat="FOTOGRAFÍA">Fotografía</button>
+              <button class="cat-btn" data-cat="VIDEOS">Videos</button>
+              <button class="cat-btn" data-cat="GUIÓN">Guión</button>
+              <button class="cat-btn" data-cat="ANIMACIÓN">Animación</button>
+              <button class="cat-btn" data-cat="MOTION GRAPHICS">Motion Graphics</button>
+              <button class="cat-btn cat-btn-skills" data-cat="SKILLS">Skills</button>
+            </div>
+          </aside>
+    </div>
+
+    <button type="button" class="featured-photo-big active" id="fotoPhotoBig" data-for="FOTOGRAFÍA" aria-label="Ver galería de fotografía">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Audio%20Visual/Fotografia/3.2.jpg" alt="Fotografía destacada" loading="lazy">
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="videoPhotoBig" data-for="VIDEOS" aria-label="Ver galería de videos">
+      <span class="photo-crop">
+        <video src="img/proyectos.md/Audio%20Visual/Videos/Video1.mp4" poster="img/proyectos.md/Audio%20Visual/Videos/posters/Video1.jpg" muted loop playsinline preload="none" aria-label="Video destacado"></video>
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="guionPhotoBig" data-for="GUIÓN" aria-label="Ver el guión">
+      <span class="photo-crop">
+        <span class="doc-scroll-track doc-scroll-track-mini" aria-hidden="true">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-1.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-2.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-3.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-4.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-5.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-6.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-7.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-8.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-9.jpg" alt="" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-1.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-3.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-4.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-5.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-6.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-7.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-8.jpg" alt="" aria-hidden="true" loading="lazy">
+          <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-9.jpg" alt="" aria-hidden="true" loading="lazy">
+        </span>
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="animacionPhotoBig" data-for="ANIMACIÓN" aria-label="Ver galería de animación">
+      <span class="photo-crop">
+        <video src="img/proyectos.md/Audio%20Visual/Animación/lava_y_fuego.mp4" poster="img/proyectos.md/Audio%20Visual/Animación/posters/lavayfuego.jpg" muted loop playsinline preload="none" aria-label="Animación destacada: Lava y fuego"></video>
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="motionPhotoBig" data-for="MOTION GRAPHICS" aria-label="Ver galería de motion graphics">
+      <span class="photo-crop">
+        <video src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/andresc_motion_v2.mp4" poster="img/proyectos.md/Audio%20Visual/Motion%20Graphics/posters/andresc_motion_v2.jpg" muted loop playsinline preload="none" aria-label="Motion graphic de marca andresc_productions, versión 2"></video>
+      </span>
+    </button>
+
+    <div class="featured-skills" data-for="SKILLS" aria-label="Herramientas de Audiovisual">
+      <div class="featured-skills-card">
+        <button type="button" class="skills-rotator" id="skillsRotatorAV" aria-haspopup="dialog" aria-controls="skillsModalAV" aria-label="Ver todas las herramientas">
+          <span class="skill-icon" id="skillsRotatorIconAV">
+            <img src="img/proyectos.md/Audio%20Visual/Skills/aftereffects.png" alt="" id="skillsRotatorImgAV">
+          </span>
+          <span class="skill-name" id="skillsRotatorNameAV">After Effects</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="skills-modal" id="skillsModalAV" role="dialog" aria-modal="true" aria-label="Herramientas de Audiovisual" hidden>
+      <div class="skills-modal-backdrop" data-skills-close></div>
+      <div class="skills-modal-panel">
+        <button type="button" class="skills-modal-close" data-skills-close aria-label="Cerrar">×</button>
+        <span class="featured-skills-title">Herramientas</span>
+        <div class="skills-tools">
+          <a class="skill-tool" href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noopener noreferrer" title="Adobe After Effects">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/aftereffects.png" alt="Adobe After Effects" loading="lazy"></span>
+            <span class="skill-name">After Effects</span>
+          </a>
+          <a class="skill-tool" href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener noreferrer" title="Adobe Premiere Pro">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/premiere.png" alt="Adobe Premiere Pro" loading="lazy"></span>
+            <span class="skill-name">Premiere Pro</span>
+          </a>
+          <a class="skill-tool" href="https://www.adobe.com/products/audition.html" target="_blank" rel="noopener noreferrer" title="Adobe Audition">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/audition.png" alt="Adobe Audition" loading="lazy"></span>
+            <span class="skill-name">Audition</span>
+          </a>
+          <a class="skill-tool" href="https://www.adobe.com/products/animate.html" target="_blank" rel="noopener noreferrer" title="Adobe Animate">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/animate.png" alt="Adobe Animate" loading="lazy"></span>
+            <span class="skill-name">Animate</span>
+          </a>
+          <a class="skill-tool" href="https://www.adobe.com/products/character-animator.html" target="_blank" rel="noopener noreferrer" title="Adobe Character Animator">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/charanimator.png" alt="Adobe Character Animator" loading="lazy"></span>
+            <span class="skill-name">Character Animator</span>
+          </a>
+          <a class="skill-tool" href="https://www.adobe.com/products/media-encoder.html" target="_blank" rel="noopener noreferrer" title="Adobe Media Encoder">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/mediaencoder.png" alt="Adobe Media Encoder" loading="lazy"></span>
+            <span class="skill-name">Media Encoder</span>
+          </a>
+          <a class="skill-tool" href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener noreferrer" title="DaVinci Resolve">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/davinciresolve.png" alt="DaVinci Resolve" loading="lazy"></span>
+            <span class="skill-name">DaVinci Resolve</span>
+          </a>
+          <a class="skill-tool" href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer" title="CapCut">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/capcut.png" alt="CapCut" loading="lazy"></span>
+            <span class="skill-name">CapCut</span>
+          </a>
+          <a class="skill-tool" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" title="Canva">
+            <span class="skill-icon"><img src="img/proyectos.md/Audio%20Visual/Skills/canva.png" alt="Canva" loading="lazy"></span>
+            <span class="skill-name">Canva</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-bottom-nav">
+      <button class="nav-arrow nav-prev" aria-label="Categoría anterior">‹</button>
+      <span class="nav-current">FOTOGRAFÍA</span>
+      <button class="nav-arrow nav-next" aria-label="Categoría siguiente">›</button>
+    </div>
+  </section>
+
+  <!-- WORK — ARTE PLÁSTICO -->
+  <section id="work-arteplastico" class="work-page"
+    data-title="ARTE PLASTICO"
+    data-bgs="img/Perfil.jpg/Pgn5/Fondolineas1pgn5.webp">
+    <div class="work-bg" style="background-image:url('img/Perfil.jpg/Pgn5/Fondolineas1pgn5.webp')"></div>
+
+    <span class="work-num" aria-hidden="true">03</span>
+    <div class="work-left" data-reveal>
+      <span class="m-etiqueta">trabajo 03</span>
+      <h2>Arte <span>plástico</span></h2>
+      <p>Produzco piezas visuales donde cada trazo cuenta una historia y cada historia enciende una emoción.</p>
+
+      <div class="work-actions">
+        <div class="work-cta-row">
+          <a href="#contact" class="btn-contact">Contactar <span class="arrow">›</span></a>
+          <button type="button" class="btn-gallery" data-gallery-btn>Ver galería <span class="arrow">›</span></button>
+        </div>
+        <div class="socials">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrescproductions323%40gmail.com&su=Hola%20Andr%C3%A9s%2C%20tengo%20un%20proyecto%20en%20mente&body=Hola%20Andr%C3%A9s%2C%0A%0AMi%20nombre%20es%20%5Btu%20nombre%5D%20y%20vi%20tu%20portafolio.%20Me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%0A%0AQuedo%20atento%20a%20tu%20respuesta.%0A%0A%C2%A1Saludos%21" target="_blank" rel="noopener noreferrer" title="Correo" aria-label="Escribir por correo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"></rect><path d="M3.5 6.2l8.5 6.7 8.5-6.7"></path></svg>
+          </a>
+          <a href="https://wa.me/573227379954?text=Hola%20Andr%C3%A9s%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%20%C2%BFPodr%C3%ADamos%20hablar%3F" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Escribir por WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 3.5h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V5.5z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/andresc_productions?stkn=bDYwajUxdnJ6OXJr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ver Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-categorias-wrap">
+      <button type="button" class="cat-toggle" aria-expanded="true" aria-label="Ocultar Categorías de Arte Plástico">›</button>
+      <aside class="work-categorias" aria-label="Categorías de Arte Plástico">
+            <span class="cat-chip">CATEGORIAS</span>
+            <div class="cat-list" role="listbox">
+              <button class="cat-btn active" data-cat="PINTURA">Pintura</button>
+              <button class="cat-btn" data-cat="ESCENARIO">Escenario</button>
+              <button class="cat-btn cat-btn-skills" data-cat="SKILLS">Skills</button>
+            </div>
+          </aside>
+    </div>
+
+    <button type="button" class="featured-photo-big active" id="pinturaPhotoBig" data-for="PINTURA" aria-label="Ver galería de pintura">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Arteplastico/Pintura/Caballo.jpeg" alt="Pintura destacada: Caballo" loading="lazy">
+      </span>
+    </button>
+
+    <button type="button" class="featured-photo-big" id="escenarioPhotoBig" data-for="ESCENARIO" aria-label="Ver galería de escenario">
+      <span class="photo-crop">
+        <img src="img/proyectos.md/Arteplastico/Escenario/abuelo.png" alt="Escenario destacado" loading="lazy">
+      </span>
+    </button>
+
+    <div class="featured-skills" data-for="SKILLS" aria-label="Herramientas de Arte Plástico">
+      <div class="featured-skills-card">
+        <button type="button" class="skills-rotator" id="skillsRotatorAP" aria-haspopup="dialog" aria-controls="skillsModalAP" aria-label="Ver todas las herramientas">
+          <span class="skill-icon" id="skillsRotatorIconAP">
+            <img src="img/proyectos.md/Arteplastico/Skills/arcilla.png" alt="" id="skillsRotatorImgAP">
+          </span>
+          <span class="skill-name" id="skillsRotatorNameAP">Arcilla</span>
+        </button>
+      </div>
+    </div>
+    <div class="skills-modal" id="skillsModalAP" role="dialog" aria-modal="true" aria-label="Herramientas de Arte Plástico" hidden>
+      <div class="skills-modal-backdrop" data-skills-close></div>
+      <div class="skills-modal-panel">
+        <button type="button" class="skills-modal-close" data-skills-close aria-label="Cerrar">×</button>
+        <span class="featured-skills-title">Herramientas</span>
+        <div class="skills-tools">
+          <a class="skill-tool" href="https://es.wikipedia.org/wiki/Arcilla" target="_blank" rel="noopener noreferrer" title="Arcilla">
+            <span class="skill-icon"><img src="img/proyectos.md/Arteplastico/Skills/arcilla.png" alt="Arcilla" loading="lazy"></span>
+            <span class="skill-name">Arcilla</span>
+          </a>
+          <a class="skill-tool" href="https://es.wikipedia.org/wiki/Carboncillo_(arte)" target="_blank" rel="noopener noreferrer" title="Carboncillo">
+            <span class="skill-icon"><img src="img/proyectos.md/Arteplastico/Skills/carboncillo.png" alt="Carboncillo" loading="lazy"></span>
+            <span class="skill-name">Carboncillo</span>
+          </a>
+          <a class="skill-tool" href="https://es.wikipedia.org/wiki/Pintura_al_%C3%B3leo" target="_blank" rel="noopener noreferrer" title="Óleo">
+            <span class="skill-icon"><img src="img/proyectos.md/Arteplastico/Skills/oleo.png" alt="Óleo" loading="lazy"></span>
+            <span class="skill-name">Óleo</span>
+          </a>
+          <a class="skill-tool" href="https://ibispaint.com/" target="_blank" rel="noopener noreferrer" title="ibisPaint">
+            <span class="skill-icon"><img src="img/proyectos.md/Arteplastico/Skills/ibispaint.png" alt="ibisPaint" loading="lazy"></span>
+            <span class="skill-name">ibisPaint</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-bottom-nav">
+      <button class="nav-arrow nav-prev" aria-label="Categoría anterior">‹</button>
+      <span class="nav-current">PINTURA</span>
+      <button class="nav-arrow nav-next" aria-label="Categoría siguiente">›</button>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <!-- PERFIL / HOJA DE VIDA -->
+  <section id="perfil" class="perfil" aria-labelledby="perfilTitulo">
+    <header class="m-cabeza" data-reveal>
+      <span class="m-etiqueta">perfil</span>
+      <h2 class="m-titulo" id="perfilTitulo">Diseñador<br>digital.</h2>
+    </header>
+    <p class="perfil-texto" data-reveal>Diseñador digital en formación (Tecnólogo en Producción Multimedia, SENA) con enfoque en edición de video, motion graphics e identidad visual. Convierto ideas en piezas audiovisuales y gráficas para redes sociales, en formato vertical y horizontal, y acompaño todo el proceso: guion, diseño, animación y postproducción.</p>
+    <div class="servicios-grid perfil-grid">
+      <article class="servicio" data-reveal>
+        <span class="servicio-num">Experiencia</span>
+        <h3 class="servicio-nombre">PitStop Greek</h3>
+        <ul class="servicio-lista"><li>Diseñador gráfico y motion graphics (independiente)</li><li>Identidad visual: logo, versiones y manual de marca</li><li>Animación del logo y pósteres para redes</li><li>Trabajo final del Tecnólogo</li></ul>
+      </article>
+      <article class="servicio" data-reveal>
+        <span class="servicio-num">Educación</span>
+        <h3 class="servicio-nombre">SENA</h3>
+        <ul class="servicio-lista"><li>Tecnólogo en Producción Multimedia · jul. 2025 – en curso</li><li>Bachiller · I. E. Técnica La Sagrada Familia · dic. 2024</li><li>Español nativo · Inglés básico (A1–A2)</li></ul>
+      </article>
+      <article class="servicio" data-reveal>
+        <span class="servicio-num">Destacado</span>
+        <h3 class="servicio-nombre">Proyectos</h3>
+        <ul class="servicio-lista"><li>Mural para la I. E. Técnica La Sagrada Familia</li><li>Identidad y marketing para PitStop Greek</li><li>Colaboraciones con Sweet Cookies</li><li>Colaboraciones con Pa’ Guapa yo</li><li>Premiere · After Effects · Photoshop · Illustrator · Lightroom · Blender · Figma · Canva · IA</li></ul>
+      </article>
+    </div>
+    <div class="servicios-cta" data-reveal>
+      <a href="docs/Hoja_de_vida_Andres_Caicedo.pdf" class="m-boton m-boton-lleno" target="_blank" rel="noopener" download>Descargar hoja de vida (PDF) <span aria-hidden="true">↓</span></a>
+      <a href="docs/Hoja_de_vida_Andres_Caicedo_artista_digital.pdf" class="m-boton m-boton-linea" target="_blank" rel="noopener" download>Hoja de vida con portafolio (PDF) <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios" aria-labelledby="serviciosTitulo">
+    <header class="m-cabeza" data-reveal>
+      <span class="m-etiqueta">servicios</span>
+      <h2 class="m-titulo" id="serviciosTitulo">Lo que podemos<br>crear juntos.</h2>
+    </header>
+    <div class="servicios-grid">
+      <article class="servicio" data-reveal>
+        <span class="servicio-num">01</span>
+        <h3 class="servicio-nombre">Diseño</h3>
+        <ul class="servicio-lista"><li>Identidad visual y logos</li><li>Piezas para redes y publicidad</li><li>Piezas informativas</li><li>Personajes e ilustración</li></ul>
+      </article>
+      <article class="servicio" data-reveal>
+        <span class="servicio-num">02</span>
+        <h3 class="servicio-nombre">Audiovisual</h3>
+        <ul class="servicio-lista"><li>Fotografía</li><li>Video y edición</li><li>Guion</li><li>Animación</li><li>Motion graphics</li></ul>
+      </article>
+      <article class="servicio" data-reveal>
+        <span class="servicio-num">03</span>
+        <h3 class="servicio-nombre">Arte</h3>
+        <ul class="servicio-lista"><li>Pintura por encargo</li><li>Escenografía</li><li>Obras para tu espacio</li></ul>
+      </article>
+    </div>
+    <div class="servicios-cta" data-reveal>
+      <a href="#contact" class="m-boton m-boton-lleno">Cotizar un proyecto <span aria-hidden="true">→</span></a>
+      <a href="tienda.html" class="m-boton m-boton-linea">Ver obras en venta <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-info" data-reveal>
+      <span class="m-etiqueta">contacto</span>
+      <h2>Hablemos<i class="marca-guion" aria-hidden="true"></i></h2>
+      <p>¿Tienes un proyecto en mente? Me encantaría escucharte y hacer que tu idea cobre vida.</p>
+      <div class="contact-socials">
+        <a class="social-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=andrescproductions323%40gmail.com&su=Hola%20Andr%C3%A9s%2C%20tengo%20un%20proyecto%20en%20mente&body=Hola%20Andr%C3%A9s%2C%0A%0AMi%20nombre%20es%20%5Btu%20nombre%5D%20y%20vi%20tu%20portafolio.%20Me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%0A%0AQuedo%20atento%20a%20tu%20respuesta.%0A%0A%C2%A1Saludos%21" target="_blank" rel="noopener noreferrer" title="Email" aria-label="Escribir por correo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"></rect><path d="M3.5 6.2l8.5 6.7 8.5-6.7"></path></svg>
+        </a>
+        <a class="social-btn" href="https://wa.me/573227379954?text=Hola%20Andr%C3%A9s%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20que%20tengo%20en%20mente.%20%C2%BFPodr%C3%ADamos%20hablar%3F" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Escribir por WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 3.5h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V5.5z"></path></svg>
+        </a>
+        <a class="social-btn" href="https://www.instagram.com/andresc_productions?stkn=bDYwajUxdnJ6OXJr" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ver Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+      </div>
+    </div>
+    <!-- FORMULARIO DE CONTACTO -->
+    <form id="contactForm" novalidate data-reveal target="formSubmitTarget"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeDP3F876QA4htZRnpTSm-4MQVlgTlFMCpSnTpAQ4kLVDLXiA/formResponse" method="POST">
+      <div class="f-row">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="entry.971025274" placeholder="Tu nombre" maxlength="80" required>
+        </div>
+        <div>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="entry.144518962" placeholder="tu@correo.com" maxlength="120" required>
+        </div>
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="entry.451262650" rows="4" placeholder="Cuéntame sobre tu proyecto" maxlength="2000" required></textarea>
+      </div>
+      <div class="captcha-wrap">
+        <label for="captchaContacto">Verificación: escribe el resultado
+          <canvas id="captchaPreguntaContacto" class="captcha-canvas" width="90" height="34" role="img" aria-label="Operación matemática de verificación anti-spam"></canvas>
+        </label>
+        <input type="text" id="captchaContacto" inputmode="numeric" autocomplete="off" maxlength="3" required>
+      </div>
+      <div class="hp-wrap" aria-hidden="true">
+        <label for="sitio_web_contacto">Sitio web (dejar vacío)</label>
+        <input type="text" id="sitio_web_contacto" name="sitio_web" class="hp-field" tabindex="-1" autocomplete="off">
+      </div>
+      <label class="autorizacion form-privacy" for="autorizaContacto">
+        <input type="checkbox" id="autorizaContacto" data-autorizacion required>
+        <span>Autorizo a Andrés Caicedo a usar mi nombre, correo y mensaje para responder esta solicitud, según la <a href="privacidad.html">política de privacidad</a> (Ley 1581 de 2012).</span>
+      </label>
+      <button type="submit">Enviar mensaje</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+    <iframe name="formSubmitTarget" id="formSubmitTarget" title="envío del formulario de contacto" style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;" aria-hidden="true" tabindex="-1"></iframe>
+
+    <!-- VISITAS / ME GUSTA / COMENTARIOS -->
+    <div class="comments-section" data-reveal>
+      <div class="comments-stats">
+        <span class="stat-pill" id="visitStat">👁 <strong id="visitCount">–</strong> visitas</span>
+        <button type="button" class="stat-pill like-btn" id="likeBtnMain" aria-pressed="false">
+          <span class="heart">♥</span> <strong id="likeCountMain">–</strong> me gusta
+        </button>
+        <span class="stat-pill" id="commentStat">💬 <strong id="commentCount">–</strong> comentarios</span>
+      </div>
+
+      <h3 class="comments-heading">Comentarios</h3>
+
+      <form id="commentForm" novalidate target="commentFormTarget"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSerWAn11LTx9j3BADKB469zZdW0bHbINE1cUwPfcvkxxMyZIA/formResponse" method="POST">
+        <input type="hidden" name="entry.1433213946" value="comentario">
+        <div>
+          <label for="comentNombre">Nombre</label>
+          <input type="text" id="comentNombre" name="entry.1893872878" placeholder="Tu nombre" maxlength="60" required>
+        </div>
+        <div>
+          <label for="comentTexto">Comentario</label>
+          <textarea id="comentTexto" name="entry.911016473" rows="3" placeholder="Escribe tu comentario" maxlength="500" required></textarea>
+        </div>
+        <div class="captcha-wrap">
+          <label for="captchaComentario">Verificación: escribe el resultado
+            <canvas id="captchaPreguntaComentario" class="captcha-canvas" width="90" height="34" role="img" aria-label="Operación matemática de verificación anti-spam"></canvas>
+          </label>
+          <input type="text" id="captchaComentario" inputmode="numeric" autocomplete="off" maxlength="3" required>
+        </div>
+        <div class="hp-wrap" aria-hidden="true">
+          <label for="sitio_web_comentario">Sitio web (dejar vacío)</label>
+          <input type="text" id="sitio_web_comentario" name="sitio_web" class="hp-field" tabindex="-1" autocomplete="off">
+        </div>
+        <label class="autorizacion form-privacy" for="autorizaComentario">
+          <input type="checkbox" id="autorizaComentario" data-autorizacion required>
+          <span>Entiendo que mi nombre y mi comentario serán públicos y autorizo su publicación según la <a href="privacidad.html">política de privacidad</a> y los <a href="terminos.html">términos de uso</a>.</span>
+        </label>
+        <button type="submit">Publicar comentario</button>
+        <p class="form-status" id="commentStatus" role="status" aria-live="polite"></p>
+      </form>
+      <iframe name="commentFormTarget" id="commentFormTarget" title="envío de comentario" style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;" aria-hidden="true" tabindex="-1"></iframe>
+
+      <div class="comments-list" id="commentsList">
+        <p class="comments-empty">Cargando comentarios…</p>
+      </div>
+    </div>
+    <iframe name="hiddenInteractionsTarget" id="hiddenInteractionsTarget" title="registro de visitas y me gusta" style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;" aria-hidden="true" tabindex="-1"></iframe>
+  </section>
+
+  <footer class="pie-marca">
+    <div class="pie-arriba">
+      <a href="#home" class="pie-logo" aria-label="andresc_productions: volver al inicio">
+        <svg class="pie-iso" aria-hidden="true" focusable="false"><use href="#m-iso"/></svg>
+        <span class="pie-letras"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span><span class="pie-lema">Diseño · Audiovisual · Arte</span></span>
+      </a>
+      <div class="pie-columnas">
+        <div class="pie-col">
+          <span class="pie-titulo">Navegar</span>
+          <a href="#historia">Historia</a><a href="#disciplinas">Trabajo</a><a href="#servicios">Servicios</a><a href="#contact">Contacto</a>
+        </div>
+        <div class="pie-col">
+          <span class="pie-titulo">Sala de ventas</span>
+          <a href="tienda.html">Tienda</a><a href="terminos.html">Términos y condiciones</a>
+        </div>
+        <div class="pie-col">
+          <span class="pie-titulo">Redes</span>
+          <a href="https://www.instagram.com/andresc_productions" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://wa.me/573227379954" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:andrescproductions323@gmail.com">Correo</a>
+        </div>
+        <div class="pie-col">
+          <span class="pie-titulo">Legal</span>
+          <a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="aviso-legal.html">Aviso legal</a><a href="https://www.sic.gov.co" target="_blank" rel="noopener noreferrer">SIC · Protección al consumidor</a><a href="#" data-abrir-cookies>Preferencias de cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="pie-abajo">
+      <p>© 2026 Andrés Caicedo · andresc_productions. Todos los derechos reservados. Obras protegidas por la Ley 23 de 1982.</p>
+      <p>Ibagué, Tolima · Colombia</p>
+    </div>
+  </footer>
+
+  <!-- GALERÍA POR CATEGORÍA -->
+  <div class="gallery-overlay" id="galleryOverlay" aria-hidden="true">
+    <div class="gallery-header">
+      <div class="gallery-heading">
+        <span class="gallery-title" id="galleryTitle">Fotografía</span>
+        <h3 class="gallery-subtitle" id="gallerySubtitle">Retrato y paisaje</h3>
+      </div>
+      <button type="button" class="gallery-close" id="galleryClose" aria-label="Cerrar galería">✕</button>
+    </div>
+
+    <div class="gallery-view-switch" id="galleryViewSwitch" role="group" aria-label="Cambiar tipo de vista" hidden>
+      <button type="button" class="view-btn active" data-view="carousel">Carrusel</button>
+      <button type="button" class="view-btn" data-view="grid">Cuadrícula</button>
+      <button type="button" class="view-btn" data-view="mosaic">Mosaico</button>
+    </div>
+
+    <div class="gallery-empty" id="galleryEmpty" hidden>
+      <span class="gallery-empty-icon">🖼</span>
+      <p>Muy pronto encontrarás aquí los trabajos de<br><strong id="galleryEmptyName">esta categoría</strong>.</p>
+    </div>
+
+    <div class="gallery-carousel" id="galleryCarousel">
+      <button type="button" class="nav-arrow gallery-scroll-prev" aria-label="Desplazar a la izquierda">‹</button>
+      <div class="gallery-track" id="galleryTrack">
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/Principal.jpg" alt="Fotografía 1" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/1.1.jpg" alt="Fotografía 2" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/1.2.jpg" alt="Fotografía 3" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/1.3.jpg" alt="Fotografía 4" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/1.4.jpg" alt="Fotografía 5" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/2.1.jpg" alt="Fotografía 6" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/2.2.jpg" alt="Fotografía 7" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/3.2.jpg" alt="Fotografía 8" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/3.3.jpg" alt="Fotografía 9" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/3.6.jpg" alt="Fotografía 10" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/3.8.jpg" alt="Fotografía 11" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/4.1.jpg" alt="Fotografía 12" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/4.2.jpg" alt="Fotografía 13" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/5.1.jpg" alt="Fotografía 14" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/5.2.jpg" alt="Fotografía 15" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/5.3.jpg" alt="Fotografía 16" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/5.4.jpg" alt="Fotografía 17" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/alejotunel.jpeg" alt="Fotografía 18" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/byn.jpeg" alt="Fotografía 19" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/pajaro2.jpeg" alt="Fotografía 20" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Audio%20Visual/Fotografia/tarro_galletas.jpg" alt="Fotografía 21" loading="lazy"></span>
+        </button>
+      </div>
+
+      <!-- VIDEOS -->
+      <div class="gallery-track gallery-track-videos" id="galleryTrackVideos" hidden>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Videos/Video1.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Videos/Video1.mp4" poster="img/proyectos.md/Audio%20Visual/Videos/posters/Video1.jpg" preload="none" muted loop playsinline data-auto aria-label="Video 1"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Videos/Video2.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Videos/Video2.mp4" poster="img/proyectos.md/Audio%20Visual/Videos/posters/Video2.jpg" preload="none" muted loop playsinline data-auto aria-label="Video 2"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Videos/bosque.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Videos/bosque.mp4" poster="img/proyectos.md/Audio%20Visual/Videos/posters/bosque.jpg" preload="none" muted loop playsinline data-auto aria-label="Video 3"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- GUIÓN -->
+      <div class="gallery-track gallery-track-guion" id="galleryTrackGuion" hidden>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-document"
+          aria-label="Ver el guión completo"
+          data-doc-pdf="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/guion_ads.pdf"
+          data-doc-pages='["img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-1.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-2.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-3.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-4.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-5.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-6.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-7.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-8.jpg","img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-9.jpg"]'>
+          <span class="frame-video">
+            <img src="img/proyectos.md/Audio%20Visual/Gui%C3%B3n/paginas/pagina-1.jpg" alt="Guión: portada" loading="lazy">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- ANIMACIÓN -->
+      <div class="gallery-track gallery-track-animacion" id="galleryTrackAnimacion" hidden>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Animación/cocacola.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Animación/cocacola.mp4" poster="img/proyectos.md/Audio%20Visual/Animación/posters/cocacola.jpg" preload="none" muted loop playsinline data-auto aria-label="Animación 1"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Animación/lava_y_fuego.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Animación/lava_y_fuego.mp4" poster="img/proyectos.md/Audio%20Visual/Animación/posters/lavayfuego.jpg" preload="none" muted loop playsinline data-auto aria-label="Animación 2"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- MOTION GRAPHICS -->
+      <div class="gallery-track gallery-track-motion" id="galleryTrackMotion" hidden>
+        <!-- PitStop Greek · motion graphics (cliente) -->
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_motion_f1_haz_tu_parada.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_motion_f1_haz_tu_parada.mp4" poster="img/pitstop_greek/motion/posters/pitstop_motion_f1_haz_tu_parada.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: motion graphic de Fórmula 1 «Haz tu parada»"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_motion_armado.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_motion_armado.mp4" poster="img/pitstop_greek/motion/posters/pitstop_motion_armado.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: motion «Así armamos tu vaso»"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_motion_web_con_voz.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_motion_web_con_voz.mp4" poster="img/pitstop_greek/motion/posters/pitstop_motion_web_con_voz.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: motion de la web y el pedido, con voz"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_motion_productos.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_motion_productos.mp4" poster="img/pitstop_greek/motion/posters/pitstop_motion_productos.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: motion de productos y sabores"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_motion_auto_f1.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_motion_auto_f1.mp4" poster="img/pitstop_greek/motion/posters/pitstop_motion_auto_f1.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: motion «A fondo», auto de Fórmula 1"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_motion_ingredientes.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_motion_ingredientes.mp4" poster="img/pitstop_greek/motion/posters/pitstop_motion_ingredientes.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: motion de ingredientes «Una parada completa»"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_logo_parada_en_pits.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_logo_parada_en_pits.mp4" poster="img/pitstop_greek/motion/posters/pitstop_logo_parada_en_pits.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: animación del logo «Parada en pits»"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-vertical" data-video-src="img/pitstop_greek/motion/pitstop_logo_arranque.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/pitstop_greek/motion/pitstop_logo_arranque.mp4" poster="img/pitstop_greek/motion/posters/pitstop_logo_arranque.jpg" preload="none" muted loop playsinline data-auto aria-label="PitStop Greek: animación del logo «Arranque»"></video>
+            <span class="video-tag" aria-hidden="true">PitStop Greek</span>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/andresc_motion_v2.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/andresc_motion_v2.mp4" poster="img/proyectos.md/Audio%20Visual/Motion%20Graphics/posters/andresc_motion_v2.jpg" preload="none" muted loop playsinline data-auto aria-label="Motion graphic de marca, versión 2 (2026)"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/andresc_motion_v1.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/andresc_motion_v1.mp4" poster="img/proyectos.md/Audio%20Visual/Motion%20Graphics/posters/andresc_motion_v1.jpg" preload="none" muted loop playsinline data-auto aria-label="Motion graphic de marca, versión 1 (2026)"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/motion_pieza_01.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/proyectos.md/Audio%20Visual/Motion%20Graphics/motion_pieza_01.mp4" poster="img/proyectos.md/Audio%20Visual/Motion%20Graphics/posters/motion.jpg" preload="none" muted loop playsinline data-auto aria-label="Motion graphics: pieza 01"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/marca_proyectos/premiere.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/marca_proyectos/premiere.mp4" poster="img/marca_proyectos/premiere.jpg" preload="none" muted loop playsinline data-auto aria-label="Motion graphic de marca, edición en Premiere Pro"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/marca_proyectos/el_corte.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/marca_proyectos/el_corte.mp4" poster="img/marca_proyectos/el_corte.jpg" preload="none" muted loop playsinline data-auto aria-label="Animación del logo «El corte»"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video" data-video-src="img/marca_proyectos/entrada.mp4">
+          <span class="frame-video">
+            <video class="preview-video" src="img/marca_proyectos/entrada.mp4" poster="img/marca_proyectos/entrada.jpg" preload="none" muted loop playsinline data-auto aria-label="Animación de entrada del portafolio"></video>
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- PINTURA -->
+      <div class="gallery-track gallery-track-pintura" id="galleryTrackPintura" hidden>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Barco.jpeg" alt="Pintura: Barco" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Bosque.jpeg" alt="Pintura: Bosque" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Caballo.jpeg" alt="Pintura: Caballo" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Carro.jpeg" alt="Pintura: Carro" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Cristo.jpeg" alt="Pintura: Cristo" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Fosforo.jpeg" alt="Pintura: Fósforo" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Lobo.jpeg" alt="Pintura: Lobo" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Manzana.jpeg" alt="Pintura: Manzana" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Memiran.jpeg" alt="Pintura: Memiran" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Naranja.jpeg" alt="Pintura: Naranja" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Pera.jpeg" alt="Pintura: Pera" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Piña.jpeg" alt="Pintura: Piña" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/Quiensoyyo.jpeg" alt="Pintura: Quién soy yo" loading="lazy"></span>
+        </button>
+        <!-- Serie "Un bocado no hace daño" -->
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/pintura_01.jpg" alt="Pintura: rostro con la boca goteando pintura de colores, serie 'Un bocado no hace daño'" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/pintura_02.jpg" alt="Pintura: figura angustiada con maqueta de comida chatarra, serie 'Un bocado no hace daño'" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/pintura_03.jpg" alt="Pintura: torso con pintura de colores cayendo desde la boca, serie 'Un bocado no hace daño'" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Pintura/pintura_04.jpg" alt="Pintura: montaje completo de la exposición 'Un bocado no hace daño'" loading="lazy"></span>
+        </button>
+      </div>
+
+      <!-- IDENTIDAD VISUAL -->
+      <div class="gallery-track gallery-track-identidad" id="galleryTrackIdentidad" hidden>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-document" aria-label="Manual de marca PitStop Greek (58 páginas)" data-doc-pdf="img/marca_proyectos/manual_pitstop_greek.pdf"
+          data-doc-pages='["img/marca_proyectos/manual_pitstop_greek/pagina-01.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-02.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-03.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-04.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-05.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-06.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-07.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-08.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-09.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-10.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-11.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-12.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-13.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-14.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-15.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-16.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-17.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-18.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-19.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-20.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-21.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-22.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-23.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-24.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-25.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-26.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-27.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-28.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-29.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-30.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-31.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-32.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-33.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-34.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-35.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-36.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-37.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-38.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-39.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-40.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-41.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-42.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-43.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-44.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-45.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-46.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-47.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-48.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-49.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-50.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-51.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-52.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-53.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-54.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-55.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-56.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-57.jpg", "img/marca_proyectos/manual_pitstop_greek/pagina-58.jpg"]'>
+          <span class="frame-video">
+            <img src="img/marca_proyectos/manual_pitstop_greek/pagina-01.jpg" alt="Manual de marca PitStop Greek (58 páginas)" loading="lazy">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-document" aria-label="Manual de marca andresc_productions (39 páginas)" data-doc-pdf="img/marca_proyectos/manual_de_marca.pdf"
+          data-doc-pages='["img/marca_proyectos/manual_de_marca/pagina-01.jpg", "img/marca_proyectos/manual_de_marca/pagina-02.jpg", "img/marca_proyectos/manual_de_marca/pagina-03.jpg", "img/marca_proyectos/manual_de_marca/pagina-04.jpg", "img/marca_proyectos/manual_de_marca/pagina-05.jpg", "img/marca_proyectos/manual_de_marca/pagina-06.jpg", "img/marca_proyectos/manual_de_marca/pagina-07.jpg", "img/marca_proyectos/manual_de_marca/pagina-08.jpg", "img/marca_proyectos/manual_de_marca/pagina-09.jpg", "img/marca_proyectos/manual_de_marca/pagina-10.jpg", "img/marca_proyectos/manual_de_marca/pagina-11.jpg", "img/marca_proyectos/manual_de_marca/pagina-12.jpg", "img/marca_proyectos/manual_de_marca/pagina-13.jpg", "img/marca_proyectos/manual_de_marca/pagina-14.jpg", "img/marca_proyectos/manual_de_marca/pagina-15.jpg", "img/marca_proyectos/manual_de_marca/pagina-16.jpg", "img/marca_proyectos/manual_de_marca/pagina-17.jpg", "img/marca_proyectos/manual_de_marca/pagina-18.jpg", "img/marca_proyectos/manual_de_marca/pagina-19.jpg", "img/marca_proyectos/manual_de_marca/pagina-20.jpg", "img/marca_proyectos/manual_de_marca/pagina-21.jpg", "img/marca_proyectos/manual_de_marca/pagina-22.jpg", "img/marca_proyectos/manual_de_marca/pagina-23.jpg", "img/marca_proyectos/manual_de_marca/pagina-24.jpg", "img/marca_proyectos/manual_de_marca/pagina-25.jpg", "img/marca_proyectos/manual_de_marca/pagina-26.jpg", "img/marca_proyectos/manual_de_marca/pagina-27.jpg", "img/marca_proyectos/manual_de_marca/pagina-28.jpg", "img/marca_proyectos/manual_de_marca/pagina-29.jpg", "img/marca_proyectos/manual_de_marca/pagina-30.jpg", "img/marca_proyectos/manual_de_marca/pagina-31.jpg", "img/marca_proyectos/manual_de_marca/pagina-32.jpg", "img/marca_proyectos/manual_de_marca/pagina-33.jpg", "img/marca_proyectos/manual_de_marca/pagina-34.jpg", "img/marca_proyectos/manual_de_marca/pagina-35.jpg", "img/marca_proyectos/manual_de_marca/pagina-36.jpg", "img/marca_proyectos/manual_de_marca/pagina-37.jpg", "img/marca_proyectos/manual_de_marca/pagina-38.jpg", "img/marca_proyectos/manual_de_marca/pagina-39.jpg"]'>
+          <span class="frame-video">
+            <img src="img/marca_proyectos/manual_de_marca/pagina-01.jpg" alt="Manual de marca andresc_productions (39 páginas)" loading="lazy">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-document"
+          aria-label="Ver el manual de marca completo"
+          data-doc-pdf="img/proyectos.md/Dise%C3%B1os/Identidad%20visual/manual_sweet_cookies.pdf"
+          data-doc-pages='["img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-01.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-04.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-11.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-12.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-13.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-14.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-15.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-17.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-18.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-19.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-21.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-22.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-23.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-31.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-33.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-34.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-35.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-37.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-40.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-42.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-43.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-44.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-45.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-47.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-48.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-49.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-50.jpg","img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-51.jpg"]'>
+          <span class="frame-video">
+            <img src="img/proyectos.md/Dise%C3%B1os/Identidad%20visual/paginas/pagina-01.jpg" alt="Manual de marca: portada" loading="lazy">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- PUBLICITARIO -->
+      <div class="gallery-track gallery-track-publicitario" id="galleryTrackPublicitario" hidden>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/marca_proyectos/post_00_toda_idea.jpg" alt="Post: Toda idea merece un buen corte." loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Dise%C3%B1os/Publicidad/feed_01_diseno.jpg" alt="Post 01 · Diseño: Cada línea tiene una razón" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Dise%C3%B1os/Publicidad/feed_02_audiovisual.jpg" alt="Post 02 · Audiovisual: Cada cuadro cuenta" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Dise%C3%B1os/Publicidad/feed_03_arte.jpg" alt="Post 03 · Arte: Lo hecho a mano no se repite" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Diseños/Publicidad/feed_ig_01.webp" alt="Publicidad 1" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Diseños/Publicidad/yoads.jpeg" alt="Publicidad 2" loading="lazy"></span>
+        </button>
+      </div>
+
+      <!-- INFORMATIVO -->
+      <div class="gallery-track gallery-track-informativo" id="galleryTrackInformativo" hidden>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Diseños/Informativo/yosena.jpeg" alt="Informativo 1" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item gallery-item-video gallery-item-document" aria-label="Manual del sitio web en WordPress (92 páginas)" data-doc-pdf="img/marca_proyectos/manual_wordpress.pdf"
+          data-doc-pages='["img/marca_proyectos/manual_wordpress/pagina-01.jpg", "img/marca_proyectos/manual_wordpress/pagina-02.jpg", "img/marca_proyectos/manual_wordpress/pagina-04.jpg", "img/marca_proyectos/manual_wordpress/pagina-07.jpg", "img/marca_proyectos/manual_wordpress/pagina-08.jpg", "img/marca_proyectos/manual_wordpress/pagina-10.jpg", "img/marca_proyectos/manual_wordpress/pagina-13.jpg", "img/marca_proyectos/manual_wordpress/pagina-17.jpg", "img/marca_proyectos/manual_wordpress/pagina-19.jpg", "img/marca_proyectos/manual_wordpress/pagina-23.jpg", "img/marca_proyectos/manual_wordpress/pagina-26.jpg", "img/marca_proyectos/manual_wordpress/pagina-31.jpg", "img/marca_proyectos/manual_wordpress/pagina-35.jpg", "img/marca_proyectos/manual_wordpress/pagina-38.jpg", "img/marca_proyectos/manual_wordpress/pagina-40.jpg", "img/marca_proyectos/manual_wordpress/pagina-46.jpg", "img/marca_proyectos/manual_wordpress/pagina-49.jpg", "img/marca_proyectos/manual_wordpress/pagina-55.jpg", "img/marca_proyectos/manual_wordpress/pagina-57.jpg", "img/marca_proyectos/manual_wordpress/pagina-63.jpg", "img/marca_proyectos/manual_wordpress/pagina-64.jpg", "img/marca_proyectos/manual_wordpress/pagina-72.jpg", "img/marca_proyectos/manual_wordpress/pagina-75.jpg", "img/marca_proyectos/manual_wordpress/pagina-82.jpg"]'>
+          <span class="frame-video">
+            <img src="img/marca_proyectos/manual_wordpress/pagina-01.jpg" alt="Manual del sitio web en WordPress (92 páginas)" loading="lazy">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- PERSONAJES -->
+      <div class="gallery-track gallery-track-personajes-diseno" id="galleryTrackPersonajesDiseno" hidden>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Diseños/Personajes/personaje_color.webp" alt="Personajes 1" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Diseños/Personajes/personaje_turnaround.jpg" alt="Personajes 2: turnaround" loading="lazy"></span>
+        </button>
+      </div>
+
+      <!-- ESCENARIO -->
+      <div class="gallery-track gallery-track-escenario" id="galleryTrackEscenario" hidden>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Escenario/abuelo.png" alt="Escenario: Abuelo" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Escenario/gato.jpeg" alt="Escenario: Gato" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Escenario/mapache.jpeg" alt="Escenario: Mapache" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Escenario/escenario_01.jpg" alt="Escenario: diorama, vista 1" loading="lazy"></span>
+        </button>
+        <button type="button" class="gallery-item">
+          <span class="frame-photo"><img src="img/proyectos.md/Arteplastico/Escenario/escenario_02.jpg" alt="Escenario: diorama, vista 2" loading="lazy"></span>
+        </button>
+      </div>
+      <button type="button" class="nav-arrow gallery-scroll-next" aria-label="Desplazar a la derecha">›</button>
+    </div>
+  </div>
+
+  <!-- VISTA AMPLIADA DE UNA FOTO O VIDEO -->
+  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+    <button type="button" class="nav-arrow gallery-lb-prev" aria-label="Anterior">‹</button>
+    <img id="galleryLightboxImg" src="" alt="Foto ampliada">
+    <video preload="none" id="galleryLightboxVideo" hidden controls playsinline></video>
+    <div class="gallery-lightbox-doc" id="galleryLightboxDoc" hidden>
+      <div class="doc-scroll-viewport" id="docScrollViewport">
+        <div class="doc-scroll-track" id="docScrollTrack"></div>
+      </div>
+      <iframe class="doc-pdf-frame" id="docPdfFrame" title="Documento PDF completo" hidden></iframe>
+      <button type="button" class="doc-pdf-toggle" id="docPdfToggle" hidden>Abrir PDF completo</button>
+      <a class="doc-pdf-newtab" id="docPdfNewTab" href="" target="_blank" rel="noopener noreferrer" hidden>Abrir en pestaña nueva ↗</a>
+    </div>
+    <button type="button" class="nav-arrow gallery-lb-next" aria-label="Siguiente">›</button>
+    <button type="button" class="gallery-close gallery-lb-close" id="galleryLightboxClose" aria-label="Cerrar vista ampliada">✕</button>
+  </div>
+
+  <script src="legal/consentimiento.js?v=20261106a" defer></script>
+  <script src="script.js?v=20261112q" defer></script>
+  <script src="skills-rotator.js?v=20261004a" defer></script>
+  <script src="animaciones.js?v=20261004a" defer></script>
+  <script src="seguridad/seguridad.js?v=20261004a" defer></script>
+  <script src="marca.js?v=20261104a" defer></script>
+<div id="hvVisor" class="hv-visor" hidden role="dialog" aria-modal="true" aria-label="Hoja de vida">
+  <div class="hv-barra"><span>Hoja de vida · Andrés Caicedo</span><button type="button" class="hv-cerrar" aria-label="Cerrar">✕</button></div>
+  <div class="hv-hoja"><img alt="Hoja de vida de Andrés Caicedo" decoding="async"></div>
+  <p class="hv-nota">¿La necesitas en PDF? Escríbeme por WhatsApp o correo y te la envío.</p>
+</div>
+<script src="hoja-vida.js?v=1" defer></script>
+</body>
+</html>

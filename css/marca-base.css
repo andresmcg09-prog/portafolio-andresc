@@ -1,0 +1,86 @@
+/* ══════════════════════════════════════════════════════════════
+   andresc_productions · base de la marca (todas las páginas)
+   Letra Inter · café, crema y terracota · esquinas rectas · el «corte»
+   ══════════════════════════════════════════════════════════════ */
+
+@font-face { font-family: 'Inter'; src: url('fonts/inter-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('fonts/inter-latin-500-normal.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('fonts/inter-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('fonts/inter-latin-700-normal.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root {
+  /* paleta de la marca */
+  --m-cafe: #2E2016;
+  --m-crema: #F4ECDD;
+  --m-crema-2: #EADDC6;
+  --m-papel: #FAF5EB;
+  --m-terra: #C1613C;
+  --m-terra-claro: #E3A486;
+  --m-noche: #1E160E;
+  --m-noche-2: #2A1F15;
+  /* uso */
+  --m-fondo: var(--m-crema);
+  --m-fondo-2: var(--m-papel);
+  --m-texto: var(--m-cafe);
+  --m-texto-suave: #6B5A47;
+  --m-acento: var(--m-terra);
+  --m-linea: rgba(46, 32, 22, 0.14);
+  --m-letra: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  /* movimiento de la marca */
+  --m-curva-corte: cubic-bezier(0.7, 0, 0.2, 1);
+  --m-curva-salida: cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* las letras del sitio anterior pasan a ser Inter */
+  --display: var(--m-letra);
+  --body: var(--m-letra);
+}
+body.theme-dark {
+  --m-fondo: var(--m-noche);
+  --m-fondo-2: var(--m-noche-2);
+  --m-texto: var(--m-crema);
+  --m-texto-suave: #BCAE98;
+  --m-acento: var(--m-terra-claro);
+  --m-linea: rgba(244, 236, 221, 0.14);
+}
+
+/* ── palabra de la marca: andresc_productions (texto real, no imagen) ── */
+.marca-palabra {
+  font-family: var(--m-letra);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  line-height: 1;
+}
+.marca-palabra b { font-weight: 700; }
+.marca-guion {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.12em;
+  margin: 0 0.04em;
+  vertical-align: -0.1em;
+  background: var(--m-acento);
+}
+
+/* ── etiqueta de sección: «_historia», «_trabajo»… ── */
+.m-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--m-letra);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--m-acento);
+}
+.m-etiqueta::before {
+  content: '';
+  width: 1.6rem;
+  height: 3px;
+  background: currentColor;
+}
+
+/* ── ícono A·C ── */
+.m-isotipo { display: block; width: 2rem; height: 2rem; color: var(--m-texto); flex: none; }
+
+/* contenedor invisible del símbolo reutilizable */
+.m-simbolos { position: absolute; width: 0; height: 0; overflow: hidden; }

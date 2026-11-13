@@ -1,0 +1,69 @@
+/* ══════════════════════════════════════════════════════════════
+   andresc_productions · tienda, pedidos y privacidad
+   Va DESPUÉS de tienda.css: misma sala de ventas, con la marca.
+   ══════════════════════════════════════════════════════════════ */
+
+:root { --display: var(--m-letra); --body: var(--m-letra); --gold-fondo: var(--m-terra); --acento-texto: #9A4526; }
+body.theme-dark { --acento-texto: var(--m-terra-claro); }
+body { -webkit-font-smoothing: antialiased; }
+
+/* esquinas rectas en todo (la marca es un bloque) */
+*, *::before, *::after { border-radius: 0 !important; }
+
+/* sin cursivas ni destellos: Inter, sobria */
+.barra-lugar, .pedidos-estado, .pedidos-obra strong, .viva-vacia h3, .cedula-titulo, [class*="ficha"] { font-style: normal !important; }
+.renglon > span { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--m-terra); animation: subir-renglon 0.9s var(--curva) backwards; }
+.boton-claro::after, .boton-tinta::after { display: none; }
+
+/* títulos */
+.apertura h1, .viva-cabecera h2 { font-weight: 700; letter-spacing: -0.04em; text-transform: none; }
+.apertura h1 { font-size: clamp(2.8rem, min(7.5vw, 11vh), 6rem); }
+.viva-cabecera h2 { color: var(--texto); }
+.legal h1, .pedidos h1 { letter-spacing: -0.035em; }
+.legal h2, .legal h3, .compra-pasos h3 { letter-spacing: -0.02em; }
+
+/* barra superior con la marca */
+.barra { box-shadow: none; }
+.barra-marca { align-items: center; gap: 0.75rem; color: var(--texto); }
+.barra-iso { width: 30px; height: 30px; flex: none; color: var(--texto); display: block; }
+.barra-nombre { font-weight: 400; font-size: 1.02rem; letter-spacing: 0; }
+.barra-nombre .marca-guion { background: var(--m-terra); }
+body.theme-dark .barra-nombre .marca-guion { background: var(--m-terra-claro); }
+.barra-lugar {
+  font-size: 0.66rem; font-weight: 600; letter-spacing: 0.26em; text-transform: uppercase; color: var(--acento-texto);
+  padding-left: 0.75rem; border-left: 1px solid var(--linea);
+}
+.barra-enlace { font-weight: 600; letter-spacing: 0.12em; font-size: 0.74rem; }
+.barra-enlace::after { height: 3px; width: 0.9rem; right: auto; transform-origin: left; }
+.barra-carrito { border-color: var(--texto); font-weight: 600; letter-spacing: 0.12em; font-size: 0.74rem; }
+.barra-carrito:hover { background: var(--texto); color: var(--fondo); transform: none; }
+.barra-contador { background: var(--m-terra); color: var(--m-crema); }
+
+/* botones */
+.boton { letter-spacing: 0.14em; font-weight: 600; box-shadow: none !important; }
+.boton-claro { background: var(--m-terra); }
+.boton-tinta { background: var(--texto); color: var(--fondo); }
+.boton-claro:hover, .boton-tinta:hover { background: var(--m-cafe); color: var(--m-crema); transform: none; }
+body.theme-dark .boton-tinta:hover, body.theme-dark .boton-claro:hover { background: var(--m-crema); color: var(--m-noche); }
+.chip { font-weight: 600; }
+.chip[aria-pressed="true"] { background: var(--texto); border-color: var(--texto); color: var(--fondo); }
+.chip[aria-pressed="true"] .chip-numero { background: var(--m-terra); color: var(--m-crema); }
+.viva-modo { border-color: var(--texto); background: transparent; }
+.viva-modo:hover { background: var(--texto); color: var(--fondo); transform: none; }
+
+/* paredes y pasos */
+.viva-marco { border-width: 1px; border-color: var(--linea); }
+.compra-pasos li { border-width: 1px; }
+.compra-pasos li:hover { border-color: var(--m-terra); box-shadow: 10px 10px 0 var(--m-terra); }
+.compra-pasos li::before { background: var(--texto) !important; color: var(--fondo) !important; }
+
+/* pie con la marca */
+.pie-nombre { font-weight: 400; letter-spacing: 0; }
+.pie-nombre .marca-guion { background: var(--m-terra); }
+body.theme-dark .pie-nombre .marca-guion { background: var(--m-terra-claro); }
+.pie-iso { width: 44px; height: 44px; color: var(--texto); display: block; margin: 0 auto 0.9rem; }
+
+@media (max-width: 560px) {
+  .barra-lugar { display: none; }
+  .barra-nombre { font-size: 0.92rem; }
+}

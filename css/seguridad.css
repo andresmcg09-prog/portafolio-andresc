@@ -1,0 +1,21 @@
+/* ============================================================
+   Andrés Caicedo — Portafolio
+   SEGURIDAD: hoja de estilos aparte, no toca css/estilos.css.
+
+   Único propósito: esconder el "campo trampa" (honeypot) de los
+   formularios de Contacto y Comentarios — ver seguridad.js — de
+   forma que una persona real nunca lo vea ni lo pueda enfocar con
+   el teclado, pero siga estando "visible" para un bot que rellena
+   formularios sin fijarse en el CSS.
+   ============================================================ */
+
+.hp-wrap {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}

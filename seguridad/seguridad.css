@@ -1,0 +1,24 @@
+/* ── SEGURIDAD: campo trampa y casilla de verificación ── */
+
+.hp-wrap {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.captcha-wrap input {
+  max-width: 100px;
+}
+
+.captcha-canvas {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4em;
+  border-radius: 6px;
+  border: 1px solid var(--panel-border, rgba(46,32,22,0.2));
+}

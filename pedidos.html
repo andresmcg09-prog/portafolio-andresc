@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos | Sala de ventas de Andrés Caicedo</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1E160E">
+
+  <!-- SEGURIDAD -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://docs.google.com; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'none'; frame-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'; manifest-src 'none'; worker-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="icon" href="img/marca/favicon.ico" sizes="any">
+  <link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/marca/apple-touch-icon.png">
+  <link rel="stylesheet" href="tienda/tienda.css?v=20261005c">
+  <link rel="stylesheet" href="css/marca-base.css?v=20261104a">
+  <link rel="stylesheet" href="tienda/marca-tienda.css?v=20261104a">
+</head>
+
+<body class="theme-dark">
+
+  <svg class="m-simbolos" width="0" height="0" aria-hidden="true" focusable="false"><symbol id="m-iso" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" d="M100 100 100 0 54.34 0 88.34 100ZM0 0 0 100 75.66 100 64.10 66 40 66 40 54 60.02 54 43.80 6.30 41.63 6.68 39.48 7.24 37.37 7.95 35.32 8.81 33.34 9.83 31.44 10.98 29.63 12.28 27.93 13.71 26.33 15.25 24.85 16.92 23.50 18.69 22.28 20.55 21.21 22.50 20.28 24.52 19.55 26.48 18.92 28.62 18.41 31.05 18.11 33.39 18 35.87 18.08 38.22 18.35 40.56 18.83 43 19.51 45.39 20.38 47.72 21.45 49.97 22.63 52.01 24.04 54.05 25.53 55.88 27.16 57.58 29.02 59.23 31.01 60.72 33.01 61.99 26.99 72.37 24.67 70.92 22.43 69.32 20.31 67.58 18.30 65.70 16.42 63.69 14.68 61.57 13.08 59.33 11.72 57.16 10.41 54.74 9.27 52.24 8.29 49.67 7.53 47.22 6.88 44.55 6.41 41.85 6.12 39.11 6 36.37 6.07 33.62 6.31 30.88 6.74 28.17 7.34 25.48 8.11 22.85 9.06 20.27 10.17 17.75 11.36 15.48 12.78 13.13 14.24 11.02 15.94 8.86 17.79 6.82 19.76 4.91 21.85 3.13 24.06 1.49 26.37 0Z"/></symbol></svg>
+
+  <!-- BARRA -->
+  <header class="barra">
+    <a class="barra-marca" href="tienda.html">
+      <svg class="barra-iso" aria-hidden="true" focusable="false"><use href="#m-iso"/></svg>
+      <span class="barra-nombre"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span></span>
+      <span class="barra-lugar">Pedidos</span>
+    </a>
+    <nav class="barra-enlaces" aria-label="Principal">
+      <a class="barra-enlace" href="tienda.html">Tienda</a>
+      <a class="barra-enlace" href="index.html">Portafolio</a>
+    </nav>
+  </header>
+
+  <!-- LISTADO -->
+  <main class="pedidos">
+    <h1>Pedidos</h1>
+    <p class="pedidos-nota">Cada fila es un clic en un botón de compra de la tienda, justo antes de abrir WhatsApp. La página no puede saber quién hizo el clic: el nombre y el número los ves en el chat de WhatsApp cuando esa persona envía el mensaje.</p>
+
+    <div class="pedidos-resumen" id="pedidosResumen" hidden>
+      <p class="pedidos-dato"><strong id="pedidosTotal">0</strong><span>clics de compra</span></p>
+      <p class="pedidos-dato"><strong id="pedidosObras">0</strong><span>obras distintas</span></p>
+      <p class="pedidos-dato"><strong id="pedidosFavorita">–</strong><span>la más pedida</span></p>
+    </div>
+
+    <p class="pedidos-estado" id="pedidosEstado" role="status">Cargando el listado…</p>
+
+    <div class="pedidos-tabla-marco" id="pedidosMarco" hidden>
+      <table class="pedidos-tabla">
+        <thead>
+          <tr>
+            <th scope="col">Fecha y hora</th>
+            <th scope="col">Botón</th>
+            <th scope="col">Obra</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody id="pedidosCuerpo"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="tienda/obras.js?v=20261005a" defer></script>
+  <script src="tienda/pedidos.js?v=20261005a" defer></script>
+  <script src="seguridad/seguridad.js?v=20261005a" defer></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala de ventas · andresc_productions | Andrés Caicedo</title>
+  <meta name="description" content="Sala de ventas de Andrés Caicedo: pinturas, fotografías, videos, arte digital, guiones e identidad visual. Cada obra con su historia, su ficha y su precio.">
+  <meta name="theme-color" content="#1E160E">
+
+  <!-- SEGURIDAD -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://docs.google.com; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'self'; frame-src https://docs.google.com; form-action https://docs.google.com; base-uri 'self'; object-src 'none'; manifest-src 'none'; worker-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="icon" href="img/marca/favicon.ico" sizes="any">
+  <link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/marca/apple-touch-icon.png">
+  <link rel="stylesheet" href="tienda/tienda.css?v=20261005c">
+  <link rel="stylesheet" href="css/marca-base.css?v=20261104a">
+  <link rel="stylesheet" href="tienda/marca-tienda.css?v=20261104a">
+  <link rel="stylesheet" href="legal/consentimiento.css?v=20261106a">
+</head>
+
+<body class="theme-dark">
+
+  <svg class="m-simbolos" width="0" height="0" aria-hidden="true" focusable="false"><symbol id="m-iso" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" d="M100 100 100 0 54.34 0 88.34 100ZM0 0 0 100 75.66 100 64.10 66 40 66 40 54 60.02 54 43.80 6.30 41.63 6.68 39.48 7.24 37.37 7.95 35.32 8.81 33.34 9.83 31.44 10.98 29.63 12.28 27.93 13.71 26.33 15.25 24.85 16.92 23.50 18.69 22.28 20.55 21.21 22.50 20.28 24.52 19.55 26.48 18.92 28.62 18.41 31.05 18.11 33.39 18 35.87 18.08 38.22 18.35 40.56 18.83 43 19.51 45.39 20.38 47.72 21.45 49.97 22.63 52.01 24.04 54.05 25.53 55.88 27.16 57.58 29.02 59.23 31.01 60.72 33.01 61.99 26.99 72.37 24.67 70.92 22.43 69.32 20.31 67.58 18.30 65.70 16.42 63.69 14.68 61.57 13.08 59.33 11.72 57.16 10.41 54.74 9.27 52.24 8.29 49.67 7.53 47.22 6.88 44.55 6.41 41.85 6.12 39.11 6 36.37 6.07 33.62 6.31 30.88 6.74 28.17 7.34 25.48 8.11 22.85 9.06 20.27 10.17 17.75 11.36 15.48 12.78 13.13 14.24 11.02 15.94 8.86 17.79 6.82 19.76 4.91 21.85 3.13 24.06 1.49 26.37 0Z"/></symbol></svg>
+
+  <a class="saltar" href="#paredes">Saltar a las obras</a>
+
+  <p class="aviso-muestra" id="avisoMuestra" hidden>Catálogo en preparación: los precios son estimados y las fechas y medidas están por confirmar.</p>
+
+  <!-- BARRA -->
+  <header class="barra">
+    <a class="barra-marca" href="tienda.html">
+      <svg class="barra-iso" aria-hidden="true" focusable="false"><use href="#m-iso"/></svg>
+      <span class="barra-nombre"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span></span>
+      <span class="barra-lugar">Sala de ventas</span>
+    </a>
+    <nav class="barra-enlaces" aria-label="Principal">
+      <a class="barra-enlace" href="index.html">Portafolio</a>
+      <button type="button" class="barra-carrito" id="abrirCarrito" aria-haspopup="dialog">
+        <svg class="barra-carrito-icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.3 11h10.2l2-8H6.4"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg>
+        <span>Carrito</span>
+        <span class="barra-contador" id="contadorCarrito">0</span>
+      </button>
+      <button type="button" class="tema-boton" id="temaBoton" aria-pressed="true" aria-label="Cambiar a modo claro">
+        <svg class="tema-sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="tema-luna" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- APERTURA -->
+    <section class="apertura" aria-labelledby="tituloApertura">
+      <div class="apertura-texto">
+        <h1 id="tituloApertura"><span class="renglon"><span>Sala de</span></span> <span class="renglon"><span>ventas</span></span></h1>
+        <p>Toca cualquier obra para ver su historia, su ficha y su precio. Desde ahí la compras o la sumas al carrito.</p>
+      </div>
+    </section>
+
+    <!-- PAREDES -->
+    <div class="paredes" id="paredes"></div>
+
+    <!-- CÓMO COMPRAR -->
+    <section class="compra" aria-labelledby="tituloCompra">
+      <h2 id="tituloCompra">Cómo comprar</h2>
+      <ol class="compra-pasos">
+        <li>
+          <h3>Elige la obra</h3>
+          <p>Toca la obra que te guste en cualquiera de las tres paredes. Se abre su ficha con la historia, de qué está hecha, las medidas y el precio.</p>
+        </li>
+        <li>
+          <h3>Escríbeme por WhatsApp</h3>
+          <p>Compra una obra directo o suma varias al carrito. El botón abre un mensaje ya escrito con los nombres, los códigos y el total. Solo tienes que enviarlo.</p>
+        </li>
+        <li>
+          <h3>Acordamos pago y entrega</h3>
+          <p>Te confirmo si la obra sigue disponible y definimos juntos la forma de pago y cómo te la hago llegar.</p>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- PIE -->
+  <footer class="pie">
+    <svg class="pie-iso" aria-hidden="true" focusable="false"><use href="#m-iso"/></svg>
+    <p class="pie-nombre"><span class="marca-palabra"><b>andresc</b><i class="marca-guion" aria-hidden="true"></i>productions</span></p>
+    <p class="pie-lugar">Andrés Caicedo · Artista multimedia. Ibagué, Tolima, Colombia.</p>
+    <ul class="pie-enlaces">
+      <li><a id="pieWhatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+      <li><a id="pieCorreo" href="#" target="_blank" rel="noopener noreferrer">Correo</a></li>
+      <li><a id="pieInstagram" href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="terminos.html">Términos y condiciones</a></li>
+      <li><a href="privacidad.html">Privacidad</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+      <li><a href="aviso-legal.html">Aviso legal</a></li>
+      <li><a href="https://www.sic.gov.co" target="_blank" rel="noopener noreferrer">Superintendencia de Industria y Comercio</a></li>
+      <li><a href="index.html">Volver al portafolio</a></li>
+    </ul>
+  </footer>
+
+  <!-- FICHA DE LA OBRA -->
+  <dialog class="ficha" id="ficha" aria-labelledby="fichaTitulo">
+    <div class="ficha-escena">
+      <div class="ficha-medio" id="fichaMedio"></div>
+      <div class="ficha-vistas" id="fichaVistas" hidden></div>
+      <button type="button" class="ficha-flecha ficha-anterior" id="fichaAnterior" aria-label="Obra anterior">‹</button>
+      <button type="button" class="ficha-flecha ficha-siguiente" id="fichaSiguiente" aria-label="Obra siguiente">›</button>
+    </div>
+
+    <article class="ficha-hoja">
+      <header class="ficha-encabezado">
+        <p class="ficha-codigo" id="fichaCodigo"></p>
+        <p class="ficha-estado" id="fichaEstado"></p>
+      </header>
+
+      <h2 class="ficha-titulo" id="fichaTitulo" tabindex="-1"></h2>
+      <p class="ficha-autor">Andrés Caicedo</p>
+
+      <div class="ficha-compra">
+        <p class="ficha-precio" id="fichaPrecio"></p>
+        <p class="ficha-interes" id="fichaInteres" hidden></p>
+        <button type="button" class="boton boton-claro" id="fichaAlCarrito" aria-pressed="false"></button>
+        <a class="boton boton-tinta" id="fichaComprar" href="#" target="_blank" rel="noopener noreferrer"></a>
+        <a class="boton boton-linea" id="fichaCorreo" href="#" target="_blank" rel="noopener noreferrer">Preguntar por correo</a>
+        <p class="ficha-nota" id="fichaNota"></p>
+      </div>
+
+      <dl class="ficha-datos" id="fichaDatos"></dl>
+
+      <section class="ficha-historia">
+        <h3>Historia de la obra</h3>
+        <p id="fichaHistoria"></p>
+        <a class="ficha-documento" id="fichaDocumento" href="#" target="_blank" rel="noopener noreferrer" hidden>Leer el documento completo (PDF)</a>
+      </section>
+
+      <section class="ficha-proyecto" id="fichaProyecto" hidden>
+        <h3 id="fichaProyectoTitulo"></h3>
+        <p id="fichaProyectoTexto"></p>
+        <div class="ficha-proyecto-obras" id="fichaProyectoObras"></div>
+        <button type="button" class="boton boton-linea" id="fichaProyectoAlCarrito"></button>
+      </section>
+    </article>
+
+    <button type="button" class="cerrar ficha-cerrar" id="fichaCerrar" aria-label="Cerrar la ficha">✕</button>
+  </dialog>
+
+  <!-- CARRITO -->
+  <dialog class="carrito" id="carrito" aria-labelledby="carritoTitulo">
+    <header class="carrito-encabezado">
+      <h2 id="carritoTitulo">Carrito</h2>
+      <button type="button" class="cerrar" id="carritoCerrar" aria-label="Cerrar el carrito">✕</button>
+    </header>
+    <p class="carrito-vacia" id="carritoVacia">Tu carrito está vacío. Abre una obra y toca «Añadir al carrito»: aquí se van sumando los precios para que pidas todo en un solo mensaje.</p>
+    <ul class="carrito-lista" id="carritoLista"></ul>
+    <footer class="carrito-pie" id="carritoPie" hidden>
+      <p class="carrito-cuenta" id="carritoCuenta"></p>
+      <p class="carrito-total"><span>Total</span> <strong id="carritoTotal"></strong></p>
+      <a class="boton boton-tinta" id="carritoEnviar" href="#" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+      <button type="button" class="boton boton-linea" id="carritoVaciar">Vaciar carrito</button>
+    </footer>
+  </dialog>
+
+  <!-- AVISO DEL CARRITO -->
+  <div class="aviso-carrito" id="avisoCarrito" role="status" aria-live="polite" hidden>
+    <p id="avisoCarritoTexto"></p>
+    <button type="button" id="avisoCarritoVer">Ver carrito</button>
+  </div>
+
+  <script src="legal/consentimiento.js?v=20261106a" defer></script>
+  <script src="tienda/obras.js?v=20261106a" defer></script>
+  <script src="tienda/tienda.js?v=20261106a" defer></script>
+  <script src="seguridad/seguridad.js?v=20261005a" defer></script>
+</body>
+</html>
