@@ -9,3 +9,16 @@
 .hv-hoja{width:100%;max-width:860px;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.4)}
 .hv-hoja img{display:block;width:100%;height:auto}
 .hv-nota{color:#F4ECDD;font:400 .85rem Inter,sans-serif;margin-top:12px;text-align:center}
+
+/* Portada: foto y recuadro centrados y del mismo ancho */
+.portada-visual { --pw: min(78%, 500px, 56vh); }
+.portada-bloque, .portada-cortes { width: var(--pw); transform: translateX(-50%); }
+.portada-cara {
+  position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto;
+  width: var(--pw); max-width: none; max-height: none; height: auto; object-fit: contain;
+}
+.anima .portada-cara { translate: none; }
+@media (max-width: 980px) {
+  .portada-visual { --pw: min(70%, 420px); }
+  .portada-cara { height: auto; max-width: none; }
+}
